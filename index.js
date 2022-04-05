@@ -3,3 +3,4 @@ function playAudio(){
     uahgh.play();
 }
 
+var cheese = setInterval(playAudio(), 1000);
