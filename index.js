@@ -7,7 +7,7 @@ let isPlaying = false;
 function toggleTimer(){
     if(isPlaying == false){
         isPlaying = true;
-        setInterval(main(),1000);
+        setInterval(main,1000);
     }
     
 }
