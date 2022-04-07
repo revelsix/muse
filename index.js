@@ -2,6 +2,15 @@ var uahgh = new Audio('./uahgh.mp3');
 var uahgh1 = false;
 
 let counter = 0;
+let isPlaying = false;
+
+function toggleTimer(){
+    if(isPlaying == false){
+        isPlaying = true;
+        setInterval(main(),1000);
+    }
+    
+}
 
 function main(){
     
