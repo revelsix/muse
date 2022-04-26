@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,21 @@
         <button onclick="clearInterval(intervalID); beatCount = 1;">Pause</button>
         <span>Beat: </span><span id="beat"></span><span> BPM:</span><span id="bpm"></span>
     </div>
-    <div class="set1">
-        <button id="cloop1" onclick="toggleChords();">Chords 1</button>
-        <button id="mloop1" onclick="toggleMelody();">Melody 1</button>
-        <button id="aloop1" onclick="toggleArp();">Arp 1</button>
-        <button id="dloop1" onclick="toggleDrums();">Drums 1</button>
+    <div class="beatbox">
+        <div class="set1">
+            <button id="cloop1" onclick="toggleChords();">Chords 1</button>
+            <button id="mloop1" onclick="toggleMelody();">Melody 1</button>
+            <button id="aloop1" onclick="toggleArp();">Arp 1</button>
+            <button id="dloop1" onclick="toggleDrums();">Drums 1</button>
+        </div>
+        <div class="set2">
+            <button id="cloop2" onclick="toggleChords2();">Chords 2</button>
+            <button id="mloop2" onclick="toggleMelody2();">Melody 2</button>
+            <button id="aloop2" onclick="toggleArp2();">Arp 2</button>
+            <button id="dloop2" onclick="toggleDrums2();">Drums 2</button>
+        </div>
     </div>
-    <div class="set2">
-        <button id="cloop2" onclick="toggleChords2();">Chords 2</button>
-        <button id="mloop2" onclick="toggleMelody2();">Melody 2</button>
-        <button id="aloop2" onclick="toggleArp2();">Arp 2</button>
-        <button id="dloop2" onclick="toggleDrums2();">Drums 2</button>
-    </div>
+    
 
     <script type="text/javascript" src="index.js"></script>
 </body>
